@@ -95,6 +95,7 @@ struct ContentView: View {
                         .frame(width: 500, height: 50)
                         .position(x: 55, y: -47)
                         .padding()
+                    VStack(alignment: .center, spacing: 100){
                     Text("""
     Undy's Inspirit makes anyone affected
 lower their defenses; for example,
@@ -105,6 +106,7 @@ without seeing it coming.
                         .frame(width: 380, height: 120)
                         .position(x: -20, y: -30)
                         .padding()
+                    }
                     
                 }
                 
