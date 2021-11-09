@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB6FA7727398ABA0027F091 /* Trading_CardsApp.swift */,
-				0CB6FA7927398ABA0027F091 /* ContentView.swift */,
+				0CB6FA8527398B3E0027F091 /* Views */,
 				0CB6FA7B27398ABD0027F091 /* Assets.xcassets */,
 				0CB6FA7D27398ABD0027F091 /* Preview Content */,
 			);
@@ -65,6 +65,30 @@
 				0CB6FA7E27398ABD0027F091 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CB6FA8527398B3E0027F091 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CB6FA8627398BC20027F091 /* Model */,
+				0CB6FA8727398BCA0027F091 /* Shared */,
+				0CB6FA7927398ABA0027F091 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CB6FA8627398BC20027F091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CB6FA8727398BCA0027F091 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
