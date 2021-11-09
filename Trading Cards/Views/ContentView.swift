@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
+            
+            //top of layout
+            
             Color.black
             ZStack {
                 Color.yellow
@@ -39,22 +42,51 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 230)
-                    .position(x: 300, y: -60)
+                    .position(x: 300, y: -65)
                     .padding()
                     .scaledToFit()
 }
             Color.black
             
+            //bottom of layout
+            
             HStack {
                
                 VStack {
                     Text ("STATS:")
-                        .fontWeight(.black)
-                        .position(x: 40, y:20)
-                    Text("dczdcsd")
+                        .font(Font.custom("Avener Next", size: 25))
+                        .fontWeight(.heavy)
+                        .position(x: 50, y:20)
+                    Text("Rank: C ")
+                        .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 25, y:10)
+                        .position(x: 40, y:-35)
                         .padding()
+                    Text("Tribe: Bravery")
+                        .font(Font.custom("Avener Next", size: 20))
+                        .frame(width: 500, height: 50)
+                        .position(x: 65, y: -75)
+                        .padding()
+                    
+                    Spacer()
+                    Text("Attribute: Fire")
+                        .font(Font.custom("Avener Next", size: 20))
+                        .frame(width: 500, height: 50)
+                        .position(x: 65, y: -115)
+                        .padding()
+}
+                VStack {
+                Text("Health: 392")
+                    .font(Font.custom("Avener Next", size: 20))
+                    .frame(width: 500, height: 50)
+                    .position(x: 0, y: 40)
+                    .padding()
+                Text("Strength: 166")
+                    .font(Font.custom("Avener Next", size: 20))
+                    .frame(width: 500, height: 50)
+                    .position(x: 10, y: -75)
+                    .padding()
+                
             }
         }
 
