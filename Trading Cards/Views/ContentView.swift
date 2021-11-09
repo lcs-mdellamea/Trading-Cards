@@ -35,6 +35,13 @@ struct ContentView: View {
                     .border(Color.black, width: 10)
                     .padding()
                     .scaledToFit()
+                Image("YokaiLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 230)
+                    .position(x: 300, y: -60)
+                    .padding()
+                    .scaledToFit()
 }
             Color.black
             
@@ -44,6 +51,10 @@ struct ContentView: View {
                     Text ("STATS:")
                         .fontWeight(.black)
                         .position(x: 40, y:20)
+                    Text("dczdcsd")
+                        .frame(width: 500, height: 50)
+                        .position(x: 25, y:10)
+                        .padding()
             }
         }
 
