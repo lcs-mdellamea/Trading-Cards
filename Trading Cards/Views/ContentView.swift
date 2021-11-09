@@ -50,7 +50,7 @@ struct ContentView: View {
                     .padding()
                     .scaledToFit()
 }
-            Color.teal
+            Color.red
             
             //bottom of layout
         ZStack {
@@ -66,44 +66,43 @@ struct ContentView: View {
                     Text("Rank: C ")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 40, y:-55)
+                        .position(x: 40, y:-35)
                         .padding()
                     Text("Tribe: Bravery")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 65, y: -75)
+                        .position(x: 65, y: -90)
                         .padding()
                     Text("Attribute: Fire")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 65, y: -115)
+                        .position(x: 65, y: -150)
                         .padding()
 }
                 VStack {
                     Text("Health: 392")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 5, y: 40)
+                        .position(x: 5, y: 65)
                         .padding()
                     Text("Strength: 166")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 30, y: -24)
+                        .position(x: 30, y: 10)
                         .padding()
                     Text("Defense: 90")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 10, y: -89)
+                        .position(x: 10, y: -47)
                         .padding()
-                    
                     Text("""
-Undy's Inspirit makes anyone affected
+    Undy's Inspirit makes anyone affected
 lower their defenses; for example,
 they might get hit by a stray ball without seeing it coming.
 """)
-                        .font(Font.custom("Avener Next", size: 20))
+                        .font(Font.custom("Avener Next", size: 21))
                         .frame(width: 380, height: 100)
-                        .position(x: -30, y: -50)
+                        .position(x: -20, y: -30)
                         .padding()
                     
                 }
@@ -111,7 +110,7 @@ they might get hit by a stray ball without seeing it coming.
             }
             
         }
-
+            Color.teal
     }
         .navigationTitle("Undy")
 }
