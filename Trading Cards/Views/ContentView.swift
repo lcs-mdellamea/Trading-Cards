@@ -13,7 +13,7 @@ struct ContentView: View {
             
             //top of layout
             
-            Color.black
+            Color.teal
             ZStack {
                 Color.yellow
                 VStack {
@@ -50,11 +50,11 @@ struct ContentView: View {
                     .padding()
                     .scaledToFit()
 }
-            Color.black
+            Color.teal
             
             //bottom of layout
         ZStack {
-            Color.brown
+            Color.yellow
             .border(Color.black, width: 5)
             HStack {
                
@@ -62,11 +62,11 @@ struct ContentView: View {
                     Text ("STATS:")
                         .font(Font.custom("Avener Next", size: 25))
                         .fontWeight(.heavy)
-                        .position(x: 50, y:20)
+                        .position(x: 50, y:30)
                     Text("Rank: C ")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 40, y:-35)
+                        .position(x: 40, y:-55)
                         .padding()
                     Text("Tribe: Bravery")
                         .font(Font.custom("Avener Next", size: 20))
@@ -94,6 +94,16 @@ struct ContentView: View {
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
                         .position(x: 10, y: -89)
+                        .padding()
+                    
+                    Text("""
+Undy's Inspirit makes anyone affected
+lower their defenses; for example,
+they might get hit by a stray ball without seeing it coming.
+""")
+                        .font(Font.custom("Avener Next", size: 20))
+                        .frame(width: 380, height: 100)
+                        .position(x: -30, y: -50)
                         .padding()
                     
                 }
