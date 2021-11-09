@@ -11,6 +11,7 @@
 		0CB6FA7A27398ABA0027F091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6FA7927398ABA0027F091 /* ContentView.swift */; };
 		0CB6FA7C27398ABD0027F091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6FA7B27398ABD0027F091 /* Assets.xcassets */; };
 		0CB6FA7F27398ABD0027F091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6FA7E27398ABD0027F091 /* Preview Assets.xcassets */; };
+		0CF1B8B0273B072A004F6E81 /* TradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1B8AF273B072A004F6E81 /* TradingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0CB6FA7927398ABA0027F091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CB6FA7B27398ABD0027F091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB6FA7E27398ABD0027F091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CF1B8AF273B072A004F6E81 /* TradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		0CB6FA8627398BC20027F091 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0CF1B8AF273B072A004F6E81 /* TradingCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				0CB6FA7A27398ABA0027F091 /* ContentView.swift in Sources */,
 				0CB6FA7827398ABA0027F091 /* Trading_CardsApp.swift in Sources */,
+				0CF1B8B0273B072A004F6E81 /* TradingCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
