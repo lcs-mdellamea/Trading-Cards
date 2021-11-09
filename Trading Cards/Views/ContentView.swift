@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
-            Color.brown
+            Color.black
             ZStack {
-                Color.white
+                Color.yellow
                 VStack {
                     Color.indigo
                         .padding(.horizontal,16)
@@ -22,7 +22,7 @@ struct ContentView: View {
                         .padding(.horizontal,16)
                         .frame(height: 100)
                         .position(x:207, y: 65)
-                    Color.white
+                    Color.red
                         .padding(.horizontal, 16)
                         .frame(height:50)
                     Color.indigo
@@ -32,16 +32,17 @@ struct ContentView: View {
 }
                 Image("Undy")
                     .resizable()
-                    .border(Color.black, width: 5)
+                    .border(Color.black, width: 10)
                     .padding()
                     .scaledToFit()
 }
-            Color.brown
+            Color.black
             
             HStack {
                
                 VStack {
-                    Text("cdfvsd")
+                    Text ("STATS:")
+                        .fontWeight(.black)
                         .position(x: 40, y:20)
             }
         }
