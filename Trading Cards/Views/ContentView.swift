@@ -66,17 +66,17 @@ struct ContentView: View {
                     Text("Rank: C ")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 40, y:-35)
+                        .position(x: 40, y:-41)
                         .padding()
                     Text("Tribe: Bravery")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 65, y: -90)
+                        .position(x: 65, y: -97)
                         .padding()
                     Text("Attribute: Fire")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 65, y: -150)
+                        .position(x: 65, y: -154)
                         .padding()
 }
                 VStack {
@@ -93,15 +93,16 @@ struct ContentView: View {
                     Text("Defense: 90")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
-                        .position(x: 10, y: -47)
+                        .position(x: 55, y: -47)
                         .padding()
                     Text("""
     Undy's Inspirit makes anyone affected
 lower their defenses; for example,
-they might get hit by a stray ball without seeing it coming.
+    they might get hit by a stray ball
+without seeing it coming.
 """)
                         .font(Font.custom("Avener Next", size: 21))
-                        .frame(width: 380, height: 100)
+                        .frame(width: 380, height: 120)
                         .position(x: -20, y: -30)
                         .padding()
                     
