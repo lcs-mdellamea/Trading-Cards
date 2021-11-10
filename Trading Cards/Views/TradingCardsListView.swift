@@ -11,7 +11,9 @@ struct TradingCardsListView: View {
     var body: some View {
         List {
             
-            
+            Text("Undy")
+            Text("Blazion")
+            Text("Komajiro")
             
         }
         .navigationTitle("Trading Cards")
