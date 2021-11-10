@@ -2,22 +2,54 @@
 //  ContentView.swift
 //  Trading Cards
 //
-//  Created by Madison Dellamea on 11/8/21.
+//  Created by Madison Dellamea on 11/10/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    
-    let item: TradingCard
-    
     var body: some View {
         ScrollView {
             
             //top of layout
             
             Color.teal
-            PhotoStatsView(stats: item.stats, imageLogo: item.imageLogo, imageName: item.imageName, rank: item.rank, tribe: item.tribe, attribute: item.attribute, health: item.health, strength: item.strength, defense: item.defense, info: item.info)
+            ZStack {
+                Color.yellow
+                VStack {
+                    Color.indigo
+                        .padding(.horizontal,16)
+                        .frame(height: 100)
+                        .position(x:207, y: 65)
+                        .border(Color.black, width: 5)
+                    Color.red
+                        .padding(.horizontal,16)
+                        .frame(height: 100)
+                        .position(x:207, y: 50)
+                        .border(Color.black, width: 5)
+                    Color.red
+                        .padding(.horizontal, 16)
+                        .frame(height:50)
+                        .border(Color.black, width: 5)
+                    Color.indigo
+                        .padding(.horizontal,16)
+                        .frame(height: 85)
+                        .position(x: 207, y: 45)
+                        .border(Color.black, width: 5)
+}
+                Image("Undy")
+                    .resizable()
+                    .border(Color.black, width: 10)
+                    .padding()
+                    .scaledToFit()
+                Image("YokaiLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 230)
+                    .position(x: 300, y: -65)
+                    .padding()
+                    .scaledToFit()
+}
             Color.red
             
             //bottom of layout
@@ -64,7 +96,6 @@ struct ContentView: View {
                         .frame(width: 500, height: 50)
                         .position(x: 55, y: -47)
                         .padding()
-                    VStack(alignment: .center, spacing: 100){
                     Text("""
     Undy's Inspirit makes anyone affected
 lower their defenses; for example,
@@ -75,9 +106,6 @@ without seeing it coming.
                         .frame(width: 380, height: 120)
                         .position(x: -20, y: -30)
                         .padding()
-                        }
-                        
-                    }
                     
                 }
                 
@@ -86,13 +114,13 @@ without seeing it coming.
         }
             Color.teal
     }
-        .navigationTitle(item.title)
+        .navigationTitle("Undy")
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            ContentView(item: listOfCards.first!)
+        ContentView()
         }
     }
 }
+
