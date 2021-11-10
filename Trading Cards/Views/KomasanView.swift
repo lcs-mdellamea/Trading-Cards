@@ -39,6 +39,7 @@ struct KomasanView: View {
 }
                 Image("Komasan")
                     .resizable()
+                    .frame(width: 350, height: 350)
                     .border(Color.black, width: 10)
                     .padding()
                     .scaledToFit()

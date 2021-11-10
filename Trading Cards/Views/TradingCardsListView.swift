@@ -11,9 +11,21 @@ struct TradingCardsListView: View {
     var body: some View {
         List {
             
-            Text("Undy")
-            Text("Blazion")
-            Text("Komajiro")
+            NavigationLink(destination: UndyView()) {
+                Text("Undy")
+            }
+            NavigationLink(destination: BlazionView()) {
+                Text("Blazion")
+            }
+            NavigationLink(destination: KomajiroView()) {
+                Text("Komajiro")
+            }
+            NavigationLink(destination: KomasanView()) {
+                Text("Komasan")
+            }
+            NavigationLink(destination: MochismoView()) {
+                Text("Mochismo")
+            }
             
         }
         .navigationTitle("Trading Cards")

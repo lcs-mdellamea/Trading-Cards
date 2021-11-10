@@ -113,7 +113,7 @@ Normally Mochismo has a nearly featureless face with thin eyes and mouth, but wh
         }
             Color.teal
     }
-        .navigationTitle("Komasan")
+        .navigationTitle("Mochismo")
 }
 
 struct MochismoView_Previews: PreviewProvider {
