@@ -35,7 +35,7 @@ struct PhotoLayoutView: View {
                 Color.indigo
                     .padding(.horizontal,16)
                     .frame(height: 100)
-                    .position(x:207, y: 65)
+                    .position(x:207, y: 53)
                     .border(Color.black, width: 5)
                 Color.red
                     .padding(.horizontal,16)

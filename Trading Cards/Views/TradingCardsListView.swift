@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct TradingCardsListView: View {
+    
     var body: some View {
+        
         List {
             
             ForEach(listOfItems) { currentItem in
@@ -24,32 +26,27 @@ struct TradingCardsListView: View {
                                      caption2: currentItem.navigationSubtitle)
             
                 })
+                
             }
             
         }
+        
         .navigationTitle("Trading Cards")
+        
     }
+    
 }
 
 struct TradingCardsListView_Previews: PreviewProvider {
+    
     static var previews: some View {
+        
         NavigationView {
+            
             TradingCardsListView()
+            
         }
+        
     }
+    
 }
-
-//ForEach(listOfItems) { currentItem in
-//
-//    NavigationLink(destination: {
-//
-//        DetailView(item: currentItem)
-//
-//}, label: {
-//
-//    EnhancedListItemView(image2: currentItem.imageName,
-//                         title: currentItem.title,
-//                         caption2: currentItem.navigationSubtitle)
-//
-//    })
-//}

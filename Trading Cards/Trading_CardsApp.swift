@@ -12,6 +12,7 @@ struct Trading_CardsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
+                //Ensure the correct view loads
                 TradingCardsListView()
             }
         }
