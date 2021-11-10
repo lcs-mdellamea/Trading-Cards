@@ -7,19 +7,11 @@
 
 import SwiftUI
 
-struct PhotoStatsView: View {
+struct PhotoLayoutView: View {
     
     //MARK: Stored Properties
-    let stats: String
     let imageLogo: String
     let imageName: String
-    let rank: String
-    let tribe: String
-    let attribute: String
-    let health: Int
-    let strength: Int
-    let defense: Int
-    let info: String
     
     var body: some View {
         
@@ -64,8 +56,8 @@ struct PhotoStatsView: View {
     
 }
 
-struct PhotoStatsView_Previews: PreviewProvider {
+struct PhotoLayoutView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoStatsView(stats: <#T##String#>, imageLogo: <#T##String#>, imageName: <#T##String#>, rank: <#T##String#>, tribe: <#T##String#>, attribute: <#T##String#>, health: <#T##Int#>, strength: <#T##Int#>, defense: <#T##Int#>, info: <#T##String#>)
+        PhotoLayoutView(imageLogo: "YokaiLogo", imageName: "Undy")
     }
 }
