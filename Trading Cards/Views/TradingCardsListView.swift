@@ -11,20 +11,19 @@ struct TradingCardsListView: View {
     var body: some View {
         List {
             
-            NavigationLink(destination: UndyView()) {
-                Text("Undy")
-            }
-            NavigationLink(destination: BlazionView()) {
-                Text("Blazion")
-            }
-            NavigationLink(destination: KomajiroView()) {
-                Text("Komajiro")
-            }
-            NavigationLink(destination: KomasanView()) {
-                Text("Komasan")
-            }
-            NavigationLink(destination: MochismoView()) {
-                Text("Mochismo")
+            ForEach(listOfItems) { currentItem in
+            
+                NavigationLink(destination: {
+            
+                    DetailView(item: currentItem)
+            
+            }, label: {
+            
+                EnhancedListItemView(image2: currentItem.imageName,
+                                     title: currentItem.title,
+                                     caption2: currentItem.navigationSubtitle)
+            
+                })
             }
             
         }
@@ -39,3 +38,18 @@ struct TradingCardsListView_Previews: PreviewProvider {
         }
     }
 }
+
+//ForEach(listOfItems) { currentItem in
+//
+//    NavigationLink(destination: {
+//
+//        DetailView(item: currentItem)
+//
+//}, label: {
+//
+//    EnhancedListItemView(image2: currentItem.imageName,
+//                         title: currentItem.title,
+//                         caption2: currentItem.navigationSubtitle)
+//
+//    })
+//}
