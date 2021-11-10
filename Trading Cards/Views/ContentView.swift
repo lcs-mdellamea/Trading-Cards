@@ -8,51 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let item: TradingCard
+    
     var body: some View {
         ScrollView {
             
             //top of layout
             
             Color.teal
-            ZStack {
-                Color.yellow
-                VStack {
-                    Color.indigo
-                        .padding(.horizontal,16)
-                        .frame(height: 100)
-                        .position(x:207, y: 65)
-                        .border(Color.black, width: 5)
-                    Color.red
-                        .padding(.horizontal,16)
-                        .frame(height: 100)
-                        .position(x:207, y: 50)
-                        .border(Color.black, width: 5)
-                    Color.red
-                        .padding(.horizontal, 16)
-                        .frame(height:50)
-                        .border(Color.black, width: 5)
-                    Color.indigo
-                        .padding(.horizontal,16)
-                        .frame(height: 85)
-                        .position(x: 207, y: 45)
-                        .border(Color.black, width: 5)
-}
-                Image("Undy")
-                    .resizable()
-                    .border(Color.black, width: 10)
-                    .padding()
-                    .scaledToFit()
-                Image("YokaiLogo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 230)
-                    .position(x: 300, y: -65)
-                    .padding()
-                    .scaledToFit()
-}
+            PhotoStatsView(stats: item.stats, imageLogo: item.imageLogo, imageName: item.imageName, rank: item.rank, tribe: item.tribe, attribute: item.attribute, health: item.health, strength: item.strength, defense: item.defense, info: item.info)
             Color.red
             
             //bottom of layout
+            
         ZStack {
             Color.yellow
             .border(Color.black, width: 5)
@@ -106,6 +75,8 @@ without seeing it coming.
                         .frame(width: 380, height: 120)
                         .position(x: -20, y: -30)
                         .padding()
+                        }
+                        
                     }
                     
                 }
@@ -115,12 +86,13 @@ without seeing it coming.
         }
             Color.teal
     }
-        .navigationTitle("Undy")
+        .navigationTitle(item.title)
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView(item: listOfCards.first!)
         }
     }
 }

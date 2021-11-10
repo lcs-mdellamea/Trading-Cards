@@ -12,6 +12,8 @@
 		0CB6FA7C27398ABD0027F091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6FA7B27398ABD0027F091 /* Assets.xcassets */; };
 		0CB6FA7F27398ABD0027F091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6FA7E27398ABD0027F091 /* Preview Assets.xcassets */; };
 		0CF1B8B0273B072A004F6E81 /* TradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1B8AF273B072A004F6E81 /* TradingCard.swift */; };
+		0CF1B8B6273B3142004F6E81 /* TradingCardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1B8B5273B3142004F6E81 /* TradingCardsListView.swift */; };
+		0CF1B8BA273B3F1E004F6E81 /* PhotoStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1B8B9273B3F1E004F6E81 /* PhotoStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		0CB6FA7B27398ABD0027F091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB6FA7E27398ABD0027F091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CF1B8AF273B072A004F6E81 /* TradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCard.swift; sourceTree = "<group>"; };
+		0CF1B8B5273B3142004F6E81 /* TradingCardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsListView.swift; sourceTree = "<group>"; };
+		0CF1B8B9273B3F1E004F6E81 /* PhotoStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				0CB6FA8627398BC20027F091 /* Model */,
 				0CB6FA8727398BCA0027F091 /* Shared */,
 				0CB6FA7927398ABA0027F091 /* ContentView.swift */,
+				0CF1B8B5273B3142004F6E81 /* TradingCardsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 		0CB6FA8727398BCA0027F091 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0CF1B8B9273B3F1E004F6E81 /* PhotoStatsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB6FA7A27398ABA0027F091 /* ContentView.swift in Sources */,
+				0CF1B8BA273B3F1E004F6E81 /* PhotoStatsView.swift in Sources */,
 				0CB6FA7827398ABA0027F091 /* Trading_CardsApp.swift in Sources */,
+				0CF1B8B6273B3142004F6E81 /* TradingCardsListView.swift in Sources */,
 				0CF1B8B0273B072A004F6E81 /* TradingCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
