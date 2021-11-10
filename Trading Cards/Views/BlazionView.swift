@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BlazionView.swift
 //  Trading Cards
 //
 //  Created by Madison Dellamea on 11/10/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BlazionView: View {
     var body: some View {
         ScrollView {
             
@@ -37,8 +37,9 @@ struct ContentView: View {
                         .position(x: 207, y: 45)
                         .border(Color.black, width: 5)
 }
-                Image("Undy")
+                Image("Blazion")
                     .resizable()
+                    .frame(width: 350, height: 350)
                     .border(Color.black, width: 10)
                     .padding()
                     .scaledToFit()
@@ -81,29 +82,27 @@ struct ContentView: View {
                         .padding()
 }
                 VStack {
-                    Text("Health: 392")
+                    Text("Health: 393")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
                         .position(x: 5, y: 65)
                         .padding()
-                    Text("Strength: 166")
+                    Text("Strength: 195")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
                         .position(x: 30, y: 10)
                         .padding()
-                    Text("Defense: 90")
+                    Text("Defense: 153")
                         .font(Font.custom("Avener Next", size: 20))
                         .frame(width: 500, height: 50)
                         .position(x: 55, y: -47)
                         .padding()
                     Text("""
-    Undy's Inspirit makes anyone affected
-lower their defenses; for example,
-    they might get hit by a stray ball
-without seeing it coming.
+Blazion is almost always seen as very bold and motivated, while he's active as well. He firmly believes that hard work is something to be proud of.
 """)
                         .font(Font.custom("Avener Next", size: 21))
-                        .frame(width: 380, height: 120)
+                        .frame(width: 370, height: .infinity)
+                        .fixedSize(horizontal:false, vertical:true)
                         .position(x: -20, y: -30)
                         .padding()
                     
@@ -114,13 +113,12 @@ without seeing it coming.
         }
             Color.teal
     }
-        .navigationTitle("Undy")
+        .navigationTitle("Blazion")
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BlazionView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BlazionView()
         }
     }
 }
-
