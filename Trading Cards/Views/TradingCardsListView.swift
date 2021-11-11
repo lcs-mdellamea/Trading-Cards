@@ -31,7 +31,7 @@ struct TradingCardsListView: View {
             
         }
         
-        .navigationTitle("Trading Cards")
+        .navigationTitle("Yokai Trading Cards")
         
     }
     
