@@ -29,6 +29,7 @@ struct StatsLayoutView: View {
         ZStack {
             
             Color.yellow
+            
                 .border(Color.black, width: 5)
             
             HStack {
@@ -78,7 +79,7 @@ struct StatsLayoutView: View {
                         .font(Font.custom("Avener Next", size: 21))
                         .fixedSize(horizontal:false, vertical:true)
                         .frame(width: 380, height: .infinity)
-                        .position(x: -20, y: -30)
+                        .position(x: -20, y: -40)
                         .padding()
                     
                 }

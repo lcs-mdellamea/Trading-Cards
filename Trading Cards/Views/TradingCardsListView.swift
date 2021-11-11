@@ -13,7 +13,7 @@ struct TradingCardsListView: View {
         
         List {
             
-            ForEach(listOfItems) { currentItem in
+            ForEach(listOfCards) { currentItem in
             
                 NavigationLink(destination: {
             

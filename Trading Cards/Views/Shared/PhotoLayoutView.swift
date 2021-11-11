@@ -60,6 +60,7 @@ struct PhotoLayoutView: View {
                 .border(Color.black, width: 10)
                 .padding()
                 .scaledToFit()
+            
             Image(imageLogo)
                 .resizable()
                 .aspectRatio(contentMode: .fit)

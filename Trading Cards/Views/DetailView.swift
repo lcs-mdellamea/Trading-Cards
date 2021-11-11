@@ -25,8 +25,6 @@ struct DetailView: View {
             
                 PhotoLayoutView(imageLogo: item.imageLogo, imageName: item.imageName)
                 
-                Color.black
-            
                 Color.red
             
             //bottom of layout
